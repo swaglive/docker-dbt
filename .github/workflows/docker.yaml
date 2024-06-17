@@ -118,7 +118,7 @@ jobs:
           type=semver,pattern={{major}}.{{minor}}.{{patch}},value=${{ matrix.version }},suffix=${{ steps.config.outputs.docker-image-tag-suffix }}
 
     - name: Build
-      uses: docker/build-push-action@v5
+      uses: docker/build-push-action@v6
       id: build
       with:
         context: .
