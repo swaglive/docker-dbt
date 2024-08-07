@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         version:
-        - "1.8.0"
+        - "1.8.4"
         extras:
         - dbt-bigquery==1.8.2 dbt-clickhouse==1.8.1
         - dbt-bigquery==1.8.2
